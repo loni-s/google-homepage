@@ -1,8 +1,55 @@
+/* initial setup of font and simple 10 for ems for page */
 html {
     font-family: Arial, monospace;
     font-size: 10px;
 }
 /* nav bar */
+#header-container {
+    display: grid;
+    grid-template-columns: 50px 50px 100px 30px 30px 20px 20px;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-items: center;
+}
+.header {
+    padding: 20px;
+    font-size: 1.2em;
+}
+.header.left {
+    font-size: 1.4em;
+}
+#about {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#store {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#nav-whitespace {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#gmail {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#images {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+#apps {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+#google-account {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
 /* Google logo */
+#search-main {
+    align-content: 50%;
+    justify-content: center;
+}
 /* Search oval plus buttons */
 /*footer */
