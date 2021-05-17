@@ -9,25 +9,30 @@ html {
     grid-template-columns: 1fr 10fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px;
     column-gap: 100px auto 0px 0px 0px;
+    margin-top: 8px;
     align-items: center;
 }
 .header {
     position: relative;
     font-size: 1.2em;
-    justify-items: normal;
+    justify-self: end;
+}
+.header:hover {
+    text-decoration: underline;
 }
 .header.left {
     font-size: 1.4em;
-    justify-items: start;
+    justify-self: start;
 }
 #about {
     grid-column-start: 1;
     grid-column-end: 2;
-    padding-left: 20px;
+    margin-left: 25px;
 }
 #store {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-left: 15px;
 }
 #gmail {
     grid-column-start: 3;
@@ -40,16 +45,62 @@ html {
 #apps {
     grid-column-start: 5;
     grid-column-end: 6;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+table {
+    border-spacing: 0rem;
+}
+table:hover { /*needs adjustment for size and messing with table */
+    height: 200%;
+    width: 200%;
+    background-color: rgb(179, 174, 174);
+    border-radius: 50%;
+}
+td {
+    padding: 0.1rem;
+    line-height: 0.5rem;
+}
+.header.dot {
+    height: 5px;
+    width: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    display:inline-table;
 }
 #google-account {
     grid-column-start: 6;
     grid-column-end: 7;
     padding-right: 20px;
 }
-/* Google logo */
+#cat-profile-pic {
+    width: 75%;
+    /* min-width:1fr; Need to figure this out for window resizing*/
+    height: auto;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: contain;
+}
+/* Google logo - adjust this to grid container?*/
 #search-main {
-    align-content: 50%;
-    justify-content: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+}
+#logo {
+    display: block;
+    margin-top: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#search-bar {
+    display: inline-block;
+    margin-left: 50%;
+    height: 25px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid gray;
+    border-radius: 50%;
 }
 /* Search oval plus buttons */
 /*footer */
