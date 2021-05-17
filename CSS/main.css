@@ -6,45 +6,45 @@ html {
 /* nav bar */
 #header-container {
     display: grid;
-    grid-template-columns: 50px 50px 100px 30px 30px 20px 20px;
+    grid-template-columns: 1fr 10fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px;
+    column-gap: 100px auto 0px 0px 0px;
     align-items: center;
-    justify-items: center;
 }
 .header {
-    padding: 20px;
+    position: relative;
     font-size: 1.2em;
+    justify-items: normal;
 }
 .header.left {
     font-size: 1.4em;
+    justify-items: start;
 }
 #about {
     grid-column-start: 1;
     grid-column-end: 2;
+    padding-left: 20px;
 }
 #store {
     grid-column-start: 2;
     grid-column-end: 3;
 }
-#nav-whitespace {
+#gmail {
     grid-column-start: 3;
     grid-column-end: 4;
 }
-#gmail {
+#images {
     grid-column-start: 4;
     grid-column-end: 5;
 }
-#images {
+#apps {
     grid-column-start: 5;
     grid-column-end: 6;
 }
-#apps {
+#google-account {
     grid-column-start: 6;
     grid-column-end: 7;
-}
-#google-account {
-    grid-column-start: 7;
-    grid-column-end: 8;
+    padding-right: 20px;
 }
 /* Google logo */
 #search-main {
