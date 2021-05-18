@@ -1,0 +1,89 @@
+html {
+    font-family: Arial, monospace;
+    font-size: 10px;
+}
+a {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+#nav-bar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    width: 100%;
+    font-size: 1.4em;
+}
+#about{
+    display: block;
+    padding: 1rem;
+}
+#store{
+    display: block;
+    padding: 1rem;
+}
+#google-nav-buttons {
+    display: inline-block;
+    flex-grow: 1;
+    height: 50px;
+}
+#google-nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    height: 50px;
+    width: 30%;
+}
+.g-nav-bar {
+    flex: 1;
+    padding: 0rem;
+    text-align: center;
+}
+#gmail {
+    display: block;
+}
+#images {
+    display: block;
+}
+#apps {
+    display: block;
+    text-align: center;
+    height: 50px;
+}
+#nav-svg {
+    width: 48px;
+    height: 48px;
+    padding: 1px;
+}
+#nav-svg:hover {
+    background-color: rgba(223, 222, 222, 0.699);
+    border-radius: 50%;
+}
+#account {
+    display: block;
+}
+#account:hover { /* needs adjustment - create 48x48px div around img */
+    width: 48px;
+    height: 48px;
+    background-color: rgba(223, 222, 222, 0.699);
+    border-radius: 50%;
+}
+#prof-pic {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}

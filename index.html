@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- link to reset CSS stylesheet here-->
-        <link rel="stylesheet" href=CSS/reset.css />
-        <link rel="stylesheet" href=CSS/main.css />
+        <link rel="stylesheet" href=main.css />
     </head>
     <body>
-    <nav id="header-container"> <!--look up buttons-->
-        <label class="header left" id="about">About</label>
-        <label class="header left" id="store">Store</label>
-        <label class="header" id="gmail">Gmail</label>
-        <label class="header" id="images">Images</label>
-        <label class="header" id="apps">
-            <table id="app-table">
-                <tr>
-                    <td class="col-1"><span class="header dot" id="top1"></span></td>
-                    <td><span class="header dot" id="top2"></span></td>
-                    <td><span class="header dot" id="top3"></span></td>
-                </tr>
-                <tr>
-                    <td class="col-1"><span class="header dot" id="mid1"></span></td>
-                    <td class="col-2"><span class="header dot" id="mid2"></span></td>
-                    <td class="col-3"><span class="header dot" id="mid3"></span></td>
-                </tr>
-                <tr>
-                    <td><span class="header dot" id="bot1"></span></td>
-                    <td><span class="header dot" id="bot2"></span></td>
-                    <td><span class="header dot" id="bot3"></span></td>
-                </tr>
-            </table>
-        </label> <!--Add Google apps on hover in grey box-->
-        <label class="header" id="google-account">
-            <img id="cat-profile-pic" src=Images/codecatprofilepic2.jpeg alt="Profile Picture" />
-            <!-- Google Account
-            <p>Code Cat</p>
-            <p>code_cat@example.com</p> -->
-        </label>
-    </nav>
-    <main id="search-main">
-        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
-        <div id="search-bar-container">
-            <span class="search-bar" id="search-bar-start"></span>
-            <span class="search-bar" id="search-bar-middle"></span>
-            <span class="search-bar" id="search-bar-end"></span>
-            <!--code things and stuff, need oval and magnifying glass-->
-            <!--you really need to figure out buttons-->
-            <label class="search-bar" id="search-button">Google Search</label>
-            <label class="search-bar" id="search-random">I'm Feeling Lucky</label>
-            <p id="search-bar-fluff"><strong style="color:blue">Discover augmented reality galleries:</strong> from the Getty Museum to the Pigozzi Collection</p> <!--feel free to change this...-->
-        </div>
-    </main>
-    <footer>
-        <div class="footer" id="is-box-right-for-this?">
-        <p class="footer" id="ridiculous-tagline"><img src="??" alt="This page had a cute green leaf but you'll probably need to change it" /> Ridiculous tagline of text here</p>
-        <label class="footer" id="advertising">Advertising</label>
-        <label class="footer" id="business">Business</label>
-        <label class="footer" id="how-search-works">How Search works</label>
-        <label class="footer" id="privacy">Privacy</label>
-        <label class="footer" id="terms">Terms</label>
-        <label class="footer" id="settings">Settings</label>
-        </div>
-    </footer>
+        <nav id="nav-bar-container">
+            <a class="nav-bar" id="about" href="">About</a>
+            <a class="nav-bar" id="store" href="">Store</a>
+            <div class="nav-bar" id="google-nav-buttons">
+                <div id="google-nav-container">
+                    <a class="g-nav-bar" id="gmail" href="">Gmail</a>
+                    <a class="g-nav-bar" id="images" href="">Images</a>
+                    <a class="g-nav-bar" id="apps" href="">
+                        <svg id="nav-svg" focusable="false">
+                            <circle cx="16" cy="16" r="2" fill="gray" />
+                            <circle cx="24" cy="16" r="2" fill="gray" />
+                            <circle cx="32" cy="16" r="2" fill="gray" />
+                            <circle cx="16" cy="24" r="2" fill="gray" />
+                            <circle cx="24" cy="24" r="2" fill="gray" />
+                            <circle cx="32" cy="24" r="2" fill="gray" />
+                            <circle cx="16" cy="32" r="2" fill="gray" />
+                            <circle cx="24" cy="32" r="2" fill="gray" />
+                            <circle cx="32" cy="32" r="2" fill="gray" />
+                        </svg>
+                    </a>
+                    <a class="g-nav-bar" id="account" href=""><img id="prof-pic" src=Images/codecatprofile.jpeg alt="Code Cat" /></a>
+                </div>
+            </div>
+        </nav>
+        <!-- <main id="search-main">
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+            <div id="search-bar-container">
+                <span class="search-bar" id="search-bar-start"></span>
+                <span class="search-bar" id="search-bar-middle"></span>
+                <span class="search-bar" id="search-bar-end"></span>
+                code things and stuff, need oval and magnifying glass -->
+                <!--you really need to figure out buttons-->
+                <!-- <label class="search-bar" id="search-button">Google Search</label>
+                <label class="search-bar" id="search-random">I'm Feeling Lucky</label>
+                <p id="search-bar-fluff"><strong style="color:blue">Discover augmented reality galleries:</strong> from the Getty Museum to the Pigozzi Collection</p> <!--feel free to change this...-->
+            <!-- </div>
+        </main>
+        <footer>
+            <div class="footer" id="is-box-right-for-this?">
+            <p class="footer" id="ridiculous-tagline"><img src="??" alt="This page had a cute green leaf but you'll probably need to change it" /> Ridiculous tagline of text here</p>
+            <label class="footer" id="advertising">Advertising</label>
+            <label class="footer" id="business">Business</label>
+            <label class="footer" id="how-search-works">How Search works</label>
+            <label class="footer" id="privacy">Privacy</label>
+            <label class="footer" id="terms">Terms</label>
+            <label class="footer" id="settings">Settings</label>
+            </div>
+        </footer> -->
     </body>
 </html>
