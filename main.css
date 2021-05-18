@@ -29,16 +29,23 @@ a:active {
 #main-container {
     display: block;
     flex-grow: 1;
+    align-self: center;
     width: 100%;
-
-
+    min-height: fit-content;
+}
+#main {
+    height: 300px;
+}
+#logo-container {
+    text-align: center;
 }
 #footer-container {
     display: block;
-    height: 50px;
-    width: 100%;
-    border: 5px solid red;
     align-self: flex-end;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: rgba(223, 222, 222, 0.699);
 
 }
 /* Navigation Bar */
