@@ -4,30 +4,43 @@
         <link rel="stylesheet" href=main.css />
     </head>
     <body>
-        <nav id="nav-bar-container">
-            <a class="nav-bar" id="about" href="">About</a>
-            <a class="nav-bar" id="store" href="">Store</a>
-            <div class="nav-bar" id="google-nav-buttons">
-                <div id="google-nav-container">
-                    <a class="g-nav-bar" id="gmail" href="">Gmail</a>
-                    <a class="g-nav-bar" id="images" href="">Images</a>
-                    <a class="g-nav-bar" id="apps" href="">
-                        <svg id="nav-svg" focusable="false">
-                            <circle cx="16" cy="16" r="2" fill="gray" />
-                            <circle cx="24" cy="16" r="2" fill="gray" />
-                            <circle cx="32" cy="16" r="2" fill="gray" />
-                            <circle cx="16" cy="24" r="2" fill="gray" />
-                            <circle cx="24" cy="24" r="2" fill="gray" />
-                            <circle cx="32" cy="24" r="2" fill="gray" />
-                            <circle cx="16" cy="32" r="2" fill="gray" />
-                            <circle cx="24" cy="32" r="2" fill="gray" />
-                            <circle cx="32" cy="32" r="2" fill="gray" />
-                        </svg>
-                    </a>
-                    <a class="g-nav-bar" id="account" href=""><img id="prof-pic" src=Images/codecatprofile.jpeg alt="Code Cat" /></a>
+        <div id="nav-top-container">
+            <nav id="nav-bar-container">
+                <a class="nav-bar" id="about" href="">About</a>
+                <a class="nav-bar" id="store" href="">Store</a>
+                <div class="nav-bar" id="google-nav-buttons">
+                    <div id="google-nav-container">
+                        <a class="g-nav-bar" id="gmail" href="">Gmail</a>
+                        <a class="g-nav-bar" id="images" href="">Images</a>
+                        <a class="g-nav-bar" id="apps" aria-label="Google apps" role="button" href="">
+                            <svg id="nav-svg" focusable="false">
+                                <circle cx="16" cy="16" r="2" fill="gray" />
+                                <circle cx="24" cy="16" r="2" fill="gray" />
+                                <circle cx="32" cy="16" r="2" fill="gray" />
+                                <circle cx="16" cy="24" r="2" fill="gray" />
+                                <circle cx="24" cy="24" r="2" fill="gray" />
+                                <circle cx="32" cy="24" r="2" fill="gray" />
+                                <circle cx="16" cy="32" r="2" fill="gray" />
+                                <circle cx="24" cy="32" r="2" fill="gray" />
+                                <circle cx="32" cy="32" r="2" fill="gray" />
+                            </svg>
+                        </a>
+                        <a class="g-nav-bar" id="account" href=""><img id="prof-pic" src=Images/codecatprofile.jpeg alt="Code Cat" /></a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+        <div id="main-container">
+            <main id="main">
+                <div id="logo-container">
+                    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" />
+                </div>
+                <div id="search-bar-container"></div>
+                <div id="search-button-container"></div>
+                <div id="cutesy-message"></div>
+            </main>
+        </div>
+        <div id="footer-container"></div>
         <!-- <main id="search-main">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
             <div id="search-bar-container">

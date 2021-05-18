@@ -1,6 +1,13 @@
 html {
     font-family: Arial, monospace;
     font-size: 10px;
+    height: 100%;
+    margin: 0px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 a {
     color: black;
@@ -14,6 +21,27 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+/* Main Page Layout */
+#nav-top-container {
+    display: block;
+
+}
+#main-container {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+
+
+}
+#footer-container {
+    display: block;
+    height: 50px;
+    width: 100%;
+    border: 5px solid red;
+    align-self: flex-end;
+
+}
+/* Navigation Bar */
 #nav-bar-container {
     display: flex;
     flex-direction: row;
@@ -47,20 +75,24 @@ a:active {
     float: right;
     height: 50px;
     width: 30%;
+    max-width:250px;
+    min-width: fit-content;
 }
 .g-nav-bar {
     flex: 1;
-    padding: 0rem;
     text-align: center;
 }
 #gmail {
     display: block;
+    padding: 1rem;
 }
 #images {
     display: block;
+    padding: 1rem;
 }
 #apps {
     display: block;
+    padding: 1rem;
     text-align: center;
     height: 50px;
 }
@@ -73,17 +105,30 @@ a:active {
     background-color: rgba(223, 222, 222, 0.699);
     border-radius: 50%;
 }
+#account-container {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
 #account {
     display: block;
-}
-#account:hover { /* needs adjustment - create 48x48px div around img */
-    width: 48px;
-    height: 48px;
-    background-color: rgba(223, 222, 222, 0.699);
-    border-radius: 50%;
 }
 #prof-pic {
     height: 35px;
     width: 35px;
     border-radius: 50%;
+}
+#prof-pic:hover {
+    border: 6px solid rgba(223, 222, 222, 0.699);
+}
+/* Main - Logo and Search Bar, Buttons */
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+}
+#logo-container {
+    display: block;
 }
