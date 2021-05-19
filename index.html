@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href=main.css />
+        <title>Google (Mock-Up)</title>
     </head>
     <body>
         <div id="nav-top-container">
@@ -31,26 +32,48 @@
             </nav>
         </div>
         <div id="main-container">
+            <div id="top-whitespace"></div>
             <main id="main">
                 <div id="logo-container">
                     <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" />
                 </div>
-                <div id="search-bar-container"></div>
-                <div id="search-button-container"></div>
-                <div id="cutesy-message"></div>
+                <div id="search-bar-container">
+                    <div id="mag-glass-container">
+                        <img id="mag-glass" src=Images/magnifying-glass.png alt="MG" />
+                    </div>
+                    <form id="search-form" action="#">
+                        <input id="search-input" type="text" name="search">
+                    </form>
+                </div>
+                <div id="search-button-container">
+                    <button class="search-buttons" id="search-button">Google Search</button>
+                    <button class="search-buttons" id="random-button">I'm Feeling Lucky</button>
+                </div>
+                <div id="cutesy-message">
+                    <p id="said-cutesy-message">Watch <a id="i-o-link" href="" aria-label="Google I/O">Google I/O:</a> building a more helpful Google for everyone</p>
+                </div>
             </main>
+            <div id="whitespace"></div>
         </div>
-        <div id="footer-container"></div>
-        <!-- <footer>
-            <div class="footer" id="is-box-right-for-this?">
-            <p class="footer" id="ridiculous-tagline"><img src="??" alt="This page had a cute green leaf but you'll probably need to change it" /> Ridiculous tagline of text here</p>
-            <label class="footer" id="advertising">Advertising</label>
-            <label class="footer" id="business">Business</label>
-            <label class="footer" id="how-search-works">How Search works</label>
-            <label class="footer" id="privacy">Privacy</label>
-            <label class="footer" id="terms">Terms</label>
-            <label class="footer" id="settings">Settings</label>
+        <footer id="footer-container">
+            <div id="footer-top">
+                <div id="sustain-container">
+                    <img id="leaf" src=Images/leaf.png alt="" />
+                    <a class="flinks" id="sustain" href="">Carbon neutral since 2007</a>
+                </div>
             </div>
-        </footer> -->
+            <div id="footer-bottom">
+                <div id="flinks-left">
+                    <a class="flinks" id="advertising" href="">Advertising</a>
+                    <a class="flinks" id="business" href="">Business</a>
+                    <a class="flinks" id="how-to" href="">How Search works</a>
+                </div>
+                <div id="flinks-right">
+                    <a class="flinks" id="privacy" href="">Privacy</a>
+                    <a class="flinks" id="terms" href="">Terms</a>
+                    <a class="flinks" id="settings" href="">Settings</a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

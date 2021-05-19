@@ -1,13 +1,17 @@
 html {
-    font-family: Arial, monospace;
+    background-color: white;
+    font-family: Arial, sans-serif;
     font-size: 10px;
     height: 100%;
     margin: 0px;
+    padding: 0px;
 }
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 a {
     color: black;
@@ -27,26 +31,28 @@ a:active {
 
 }
 #main-container {
-    display: block;
     flex-grow: 1;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    min-height: fit-content;
-}
-#main {
-    height: 300px;
-}
-#logo-container {
-    text-align: center;
 }
 #footer-container {
-    display: block;
     align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-start;
     height: 100px;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     background-color: rgba(223, 222, 222, 0.699);
-
+    font-size: 1.4em;
 }
 /* Navigation Bar */
 #nav-bar-container {
@@ -129,13 +135,147 @@ a:active {
     border: 6px solid rgba(223, 222, 222, 0.699);
 }
 /* Main - Logo and Search Bar, Buttons */
+#top-whitespace {
+    flex-grow: 1;
+    width: 100%;
+    height: 100px;
+}
 #main {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;    
+    align-content: center;
+    min-height: 200px;
+    max-height: 575px;
+    object-fit: contain;
+    object-position: center bottom;
 }
 #logo-container {
     display: block;
+    text-align: center;
+    
+}
+#search-bar-container {
+    display: block;
+    height: 45px;
+    width: 575px;
+    min-width: 50px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid rgba(223, 222, 222, 0.699);
+    border-radius: 25px;
+}
+#search-bar-container:hover {
+    box-shadow: 0 1px 6px rgba(223, 222, 222, 0.699);
+}
+#search-bar-container:focus {
+    box-shadow: 0 1px 6px rgba(223, 222, 222, 0.699);
+}
+#mag-glass-container {
+    float: left;
+    margin-top: 8px;
+    margin-left: 12px;
+    text-align: center;
+}
+#mag-glass {
+    height: 35px;
+    width: 35px;
+    color: rgba(223, 222, 222, 0.699);
+}
+#search-form {
+    padding-left: 30px;
+}
+#search-input {
+    width: 515px;
+    height: 40px;
+    background-color:white;
+    color: black;
+    border: hidden;
+}
+#search-input:focus {
+    outline: none;
+}
+#search-button-container {
+    margin-top: 25px;
+}
+.search-buttons {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgba(223, 222, 222, 0.699);
+    border: none;
+    box-shadow: none;
+}
+.search-buttons:hover {
+    box-shadow: 0 1px 6px rgba(223, 222, 222, 0.699);
+}
+.search-buttons:focus {
+    box-shadow: 0 1px 6px rgba(223, 222, 222, 0.699);
+}
+#search-button {
+    margin-right: 5px;
+}
+#random-button {
+    margin-left: 5px;
+}
+#cutesy-message {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#said-cutesy-message {
+    font-size: 1.2em;
+}
+a#i-o-link {
+    color: blue;
+}
+#whitespace {
+    flex-grow: 1;
+    height: 20px;
+    width: 100%;
+}
+/* Footer */
+#footer-top {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#sustain-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+}
+#leaf {
+    height: 14px;
+    margin-right: 5px; 
+}
+a.flinks {
+    padding: 7px;
+    color: #70757a;
+}
+#footer-bottom {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 50px;
+}
+#flinks-left {
+    margin-left: 15%;
+}
+#flinks-right {
+    margin-right: 15%;
 }
